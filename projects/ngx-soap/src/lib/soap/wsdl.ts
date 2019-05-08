@@ -1919,7 +1919,8 @@ WSDL.prototype.objectToXML = function (obj, name, nsPrefix, nsURI, isFirst, xmln
                 if (childNsURI && childNsPrefix) {
                   if (nsContext.declareNamespace(childNsPrefix, childNsURI)) {
                     childXmlnsAttrib = ' xmlns:' + childNsPrefix + '="' + childNsURI + '"';
-                    xmlnsAttrib += childXmlnsAttrib;
+                    //xmlnsAttrib += childXmlnsAttrib;
+                    xmlnsAttrib = childXmlnsAttrib;
                   }
                 }
               }
